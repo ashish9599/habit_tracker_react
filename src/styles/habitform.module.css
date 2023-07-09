@@ -1,0 +1,47 @@
+.habitform{
+    background: rgb(18, 18, 18);
+    height: 240px;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 15px;
+    position: absolute;
+    width: 65%;
+    left: 10%;
+    top: 124px;
+    z-index: 1;
+}
+.habitform h3{
+    margin: 10px 0;    
+}
+.habitformInput{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.habitformInput label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.habitformInput input{
+    width: 80%;
+    position: relative;
+    left: 9%;
+    height: 40px;
+    background: black;
+    color: #f9f6ef;
+}
+.habitformButton{
+    text-align: end;
+    padding: 40px;
+}
+.habitformButton button{
+    margin: 0 15px;
+    height: 36px;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.green{
+    background-color: green;
+    color: white;
+}

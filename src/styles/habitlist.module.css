@@ -1,0 +1,31 @@
+.habitlist{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(20, 20, 20)
+}
+.habitlistleft{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 13px;
+}
+.habitlistleft h4::first-letter{
+    text-transform: uppercase;
+}
+.habitlistRight{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 23px;
+    font-size: 19px;
+}
+.habitlistRightCal{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    cursor: pointer;
+    color:red
+}

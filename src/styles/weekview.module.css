@@ -1,0 +1,27 @@
+.weekView{
+    background: rgb(25, 25, 25);
+}
+.weekView h1{
+text-align: center;
+margin-top: 20px;
+}
+.weekView h1::first-letter{
+    text-transform: uppercase;
+}
+.weekViewDay{
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 0px;
+}
+.weekViewButton{
+    text-align: center;
+}
+.weekViewButton button{
+    margin: 17px 0;
+    height: 35px;
+    width: 45%;
+    background: rgb(33, 32, 32);
+    font-size: 21px;
+    color: aliceblue;
+    font-weight: 500;
+}
