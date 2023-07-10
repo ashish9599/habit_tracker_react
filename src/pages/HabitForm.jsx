@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import { addHabit } from "../redux/reducer/habbitReducer";
 import styles from "../styles/habitform.module.css"
 const HabitForm=({setShowForm})=> {
- const [newHabit,setHabit]=useState('');
+const inputRef=useRef(null);
+useEffect(()=>{
+  inputRef.current.focus();
+},[])
+
+
+  const [newHabit,setHabit]=useState('');
 const dispatch=useDispatch();
  const handleSave=()=>{
   if(newHabit===''){
@@ -25,6 +31,7 @@ const dispatch=useDispatch();
 
             <label htmlFor="name">Name</label>
             <input
+            ref={inputRef}
             value={newHabit}
             onChange={(e)=>setHabit(e.target.value)}
             type="text" placeholder="Enter habit" required />
