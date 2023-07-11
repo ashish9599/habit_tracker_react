@@ -14,13 +14,13 @@ useEffect(()=>{
 const dispatch=useDispatch();
  const handleSave=()=>{
   if(newHabit===''){
-    toast.info("pleas write Habbit ")
+    toast.info("please write Habbit ")
     return ;
   }
  dispatch(addHabit(newHabit));
   // add habbit
   // di
- toast.success("Habbi added successfully");
+ toast.success("Habit is  added successfully");
   setHabit('');
   setShowForm(false);
 }

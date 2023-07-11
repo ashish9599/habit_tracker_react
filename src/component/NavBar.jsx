@@ -10,6 +10,7 @@ useEffect(()=>{
 const date=new Date();
 setHour(date.getUTCHours());
 },[])
+console.log(hour)
     return (
       <>
      <div className={styles.navbar}>

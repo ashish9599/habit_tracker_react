@@ -12,4 +12,15 @@
 .dayviewIcon i{
     padding: 5px 10px 5px 0;
     font-size: 22px;
+    cursor: pointer;
+}
+
+.dayviewIcon {
+    border: 1px solid rgb(80, 80, 80);
+    background-color: black;
+    border-radius: 10px;
+}
+.dayviewIcon:hover {
+    background-color: rgb(40, 40, 40);
+   
 }
