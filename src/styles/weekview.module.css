@@ -10,8 +10,9 @@ margin-top: 20px;
 }
 .weekViewDay{
     display: flex;
-    justify-content: space-around;
     margin: 35px 0px;
+    gap: 36px;
+    flex-wrap: wrap;
 }
 
 .weekViewButton{
